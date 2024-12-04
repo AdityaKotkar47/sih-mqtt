@@ -5,7 +5,8 @@ topic readwrite #
 # ESP8266 devices can only publish to their own topics
 pattern readwrite device/%u/rssi
 
-# Backend service can subscribe to all device topics and publish processed data
+# Backend service can subscribe to device topics and publish processed data
 user backend
 topic read device/#
-topic write position/# 
+topic write position/#
+topic write websocket/#

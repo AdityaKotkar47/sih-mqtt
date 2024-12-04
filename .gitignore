@@ -42,5 +42,23 @@ mosquitto.log.*
 *.db
 *.sqlite3
 
-# MQTT specific
-mosquitto.db 
+# MQTT and Mosquitto specific
+mosquitto.db
+config/passwd
+mosquitto/data/
+mosquitto.log
+mosquitto/
+*.pid
+*.conf.bak
+*.conf.old
+*.conf.save
+*.conf.save.*
+
+# Test files
+coverage/
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+nosetests.xml
+coverage.xml 
