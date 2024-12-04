@@ -1,0 +1,11 @@
+# Admin user has access to all topics
+user admin
+topic readwrite #
+
+# ESP8266 devices can only publish to their own topics
+pattern readwrite device/%u/rssi
+
+# Backend service can subscribe to all device topics and publish processed data
+user backend
+topic read device/#
+topic write position/# 
